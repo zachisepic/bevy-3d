@@ -9,12 +9,14 @@ mod enemy;
 use world::WorldPlugin;
 use camera::CameraPlugin;
 use player::PlayerPlugin;
+use enemy::EnemyPlugin;
 
 fn main() {
     App::new().add_plugins((DefaultPlugins,
         PlayerPlugin,
         CameraPlugin,
         WorldPlugin,
+        EnemyPlugin,
         ThirdPersonCameraPlugin,
     )).run()
 
